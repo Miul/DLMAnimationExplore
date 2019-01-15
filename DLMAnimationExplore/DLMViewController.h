@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DLMViewController.h
 //  DLMAnimationExplore
 //
 //  Created by liumu on 2019/1/11.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface DLMViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
