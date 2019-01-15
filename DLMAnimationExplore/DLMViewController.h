@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DLMViewController : UIViewController
+@interface DLMViewController : UIViewController <CAAnimationDelegate>
 
 @end
 
