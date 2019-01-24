@@ -58,7 +58,13 @@
     [super viewDidAppear:animated];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.view.layer.backgroundColor = [UIColor purpleColor].CGColor;
+        // 此时背景颜色是没有动画效果
+//        self.view.layer.backgroundColor = [UIColor purpleColor].CGColor;
+        
+        [UIView animateWithDuration:2.0 animations:^{
+            self.view.layer.backgroundColor = [UIColor purpleColor].CGColor;
+        }];
+        
         [self movingTest];
     });
 }
